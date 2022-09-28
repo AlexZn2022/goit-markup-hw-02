@@ -2,6 +2,7 @@
   --main-text-color: #757575;
   --main-title-color: #212121;
   --secondary-elements-color: #2196f3;
+  --dark-background-color: #2f303a;
 }
 
 body {
@@ -69,7 +70,7 @@ body {
   height: 600px;
   left: 0px;
   top: 80px;
-  background: #2f303a;
+  background: var(--dark-background-color);
   text-align: center;
 }
 
@@ -117,7 +118,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--main-text-color);
 }
 
 .feature-main-title {
@@ -159,14 +160,20 @@ body {
 }
 
 .footer {
-  background-color: #2f303a;
+  background-color: var(--dark-background-color);
 }
 
 .address-link {
   font-size: 14px;
+  font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+
+.address-link:hover,
+.ddress-link:active {
+  color: var(--secondary-elements-color);
 }
 
 .portfolio-buttons {
